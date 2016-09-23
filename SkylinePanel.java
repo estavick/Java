@@ -9,7 +9,7 @@ import java.awt.*;
 
 public class SkylinePanel extends JPanel
 {
-   private Rectangle rectangle1, rectangle2, rectangle3, rectangle4, rectangle5;
+   private Building rectangle1, rectangle2, rectangle3, rectangle4, rectangle5;
 
    //-----------------------------------------------------------------
    //  Constructor: Creates five Circle objects.
