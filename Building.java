@@ -1,98 +1,101 @@
-//********************************************************************
-//  Circle.java       Author: Lewis/Loftus
+//***********************
+//Building.java				Author: Lewis/Loftus
 //
-//  Represents a circle with a particular position, size, and color.
-//********************************************************************
+//Represents a building with a particular width, height, and color.
+//*************************
 
 import java.awt.*;
-
-public class Circle
+public class Building
 {
-   private int diameter, x, y;
-   private Color color;
-
-   //-----------------------------------------------------------------
-   //  Constructor: Sets up this circle with the specified values.
-   //-----------------------------------------------------------------
-   public Circle (int size, Color shade, int upperX, int upperY)
-   {
-      diameter = size;
-      color = shade;
-      x = upperX;
-      y = upperY;
-   }
-
-   //-----------------------------------------------------------------
-   //  Draws this circle in the specified graphics context.
-   //-----------------------------------------------------------------
-   public void draw (Graphics page)
-   {
-      page.setColor (color);
-      page.fillRect ();
-   }
-
-   //-----------------------------------------------------------------
-   //  Diameter mutator.
-   //-----------------------------------------------------------------
-   public void setDiameter (int size)
-   {
-      diameter = size;
-   }
-
-   //-----------------------------------------------------------------
-   //  Color mutator.
-   //-----------------------------------------------------------------
-   public void setColor (Color shade)
-   {
-      color = shade;
-   }
-
-   //-----------------------------------------------------------------
-   //  X mutator.
-   //-----------------------------------------------------------------
-   public void setX (int upperX)
-   {
-      x = upperX;
-   }
-
-
-   //-----------------------------------------------------------------
-   //  Y mutator.
-   //-----------------------------------------------------------------
-   public void setY (int upperY)
-   {
-      y = upperY;
-   }
-
-   //-----------------------------------------------------------------
-   //  Diameter accessor.
-   //-----------------------------------------------------------------
-   public int getDiameter ()
-   {
-      return diameter;
-   }
-
-   //-----------------------------------------------------------------
-   //  Color accessor.
-   //-----------------------------------------------------------------
-   public Color getColor ()
-   {
-      return color;
-   }
-
-   //-----------------------------------------------------------------
-   //  X accessor.
-   //-----------------------------------------------------------------
-   public int getX ()
-   {
-      return x;
-   }
-
-   //-----------------------------------------------------------------
-   //  Y accessor.
-   //-----------------------------------------------------------------
-   public int getY ()
-   {
-      return y;
-   }
+    private int w, h, x, y;
+    private Color color;
+    
+    //-------------------------
+    //  Constructor: Sets up this circle with the specified values.
+    //-------------------------
+    
+    public Building ( int upperX, int upperY, int width, int height, Color shade)
+    {
+    	color    = shade;
+    	w    	 = width;
+    	h        = height;
+    	x        = upperX;
+    	y 		 = upperY;
+    }
+    
+    //--------------------------------
+    // Draws this rectangle in the specified graphic context.
+    //---------------------------------
+    
+    public void draw (Graphics page)
+    {
+    	page.setColor (color);
+    	page.fillRect (x, y, w, h);
+    	page.setColor (color.blue);
+    	page.fillRect (x+3, y+3, 5, 5);
+    }
+    
+	//---------------------
+	//Rectangle mutator.
+	//---------------------
+	
+	public void setW (int width)
+	{
+		w = width;
+	}
+	
+	public void setH (int height)
+	{
+		h = height;
+	}
+	
+	//--------------------
+	//Color mutator.
+	//-------------------
+	
+	public void setColor (Color shade)
+	{
+		color = shade;
+	}
+	
+	//-----------------------
+	
+	public void setX  (int upperX)
+	{
+		x = upperX;
+	}
+	
+	public void setY  (int upperY)
+	{
+		y = upperY;
+	}
+	
+	//------------------------
+	// rectangle accessor
+	//------------------------
+	
+	public int getW ()
+	{
+		return w;
+	}
+	
+	public int getH ()
+	{
+		return h;
+	}
+	
+	public Color getColor ()
+	{
+		return color;
+	}
+	
+	public int getX ()
+	{
+		return x;
+	}
+	
+	public int getY ()
+	{
+		return y;
+	}
 }
