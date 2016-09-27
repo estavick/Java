@@ -2,11 +2,12 @@ import javax.swing.*;
 import java.awt.*;
 
 /*****
+ * Draws the panel, buildings, and city name. 
  * @authors Wanzin Yazar and Edward Stavick 
  * @version 1.0
  * @since September 26, 2016
- * @
- * @
+ * @param arg page ---- to draw the buildings with the stated specifications.
+ * @return No return value.
  * @exception Any exception.
 *****/
 

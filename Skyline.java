@@ -16,9 +16,9 @@ public class Skyline
     * 3. Use a constructor to initialize the specified values of the buildings.
     * 4. Set the dimensions, location, and color of the buildings.
     * 5. Draw the buildings.
-    * 6. Draw two windows to each building.
+    * 6. Draw two windows on each building.
     * 
-    * @param args
+    * @param args Unused.
     * @exception Any exception.
     * @return No return value.
    */

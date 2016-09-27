@@ -4,10 +4,14 @@ import java.awt.*;
  * @authors Wanzin Yazar and Edward Stavick 
  * @version 1.0
  * @since September 26, 2016
- * @param upperX, upperY, shade, width, and height ---- to initialize
- * @args w, h, color, x, and y for the location, dimensions, and color of the building.
+ * @param upperX ----- starting x-coordinate
+ * @param upperY ----- starting y-coordinate
+ * @param arg shade ---- the color of the building
+ * @param width ---- the width of the building
+ * @param page ---- draws the buildings and the windows
+ * @param height ---- the height of the window and buildings
  * @exception Any exception.
- * @return w, h, color, x, and y for the location, dimensions, and color of the building.
+ * @return The graphical depiction of building.
 *****/
 
 public class Building
@@ -16,7 +20,7 @@ public class Building
     private Color color;
     
     //-------------------------
-    //  Constructor: Sets up this circle with the specified values.
+    //  Constructor: Sets up this building with the specified values.
     //-------------------------
     
     public Building (int upperX, int upperY, Color shade, int width, int height)
